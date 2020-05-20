@@ -48,3 +48,43 @@ Video.showTags()
 // here new operator creates a new empty object {} and sets this to point to the
 // to point to the empty object, this references to the new empty object
 
+
+//function declarations and hoisting
+
+myfunction();
+
+function myfunction(){
+    console.log('hi')
+}
+
+myFunction //with () it is error because it is undefined
+
+var myFunction = function (){
+    console.log('hi')
+}
+
+var myObject = {
+    myFunction: function (a, b){
+        console.log(a +' '+b),
+        console.log(this === myObject), //false
+        console.log(this === global) //false
+        console.log(this === myOtherobject) //true
+    }
+}
+
+var myOtherobject ={}
+// myObject.myFunction.call(myOtherobject, 'hello', 'world') //firs tparamater is what this binds to
+
+// myObject.myFunction.apply(myOtherobject, ['hello', 'world']) // this, args in an array
+
+// var myFunction = myObject.myFunction.bind(myOtherobject) //bind breaks into two different steps
+// myFunction('hello', 'world') //changes the this pointer 
+
+myObject.myFunction.bind(myOtherobject, 'hello', 'world')
+//why no output?  maybe because it requires declaration, refer to the example in stack
+
+
+//arrow functions with this, this is the wierdest thing encountered yet :P
+
+
+
