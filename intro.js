@@ -77,7 +77,7 @@ object1 = o3
 object1.greet()
 console.log(object1.address['number'])
 o3.address.number //also works with console.log to output on the terminal
-console.log(o3[1]) //returns undefined 
+console.log(o3[1]) //returns undefined, thats because there's no key named one, tricked :P
 
 const object2 = {
     a: 'a',
