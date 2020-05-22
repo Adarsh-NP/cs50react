@@ -78,7 +78,6 @@ x.reduce(add)
 //higher order functions
 function map(arr, fn){
     const newArr = []
-
     arr.forEach(function(val){
         newArr.push(fn(val))
     })
@@ -95,6 +94,7 @@ function addOne(num) {
     return ++num
 }
 console.log(map(x, addOne))
+console.log(x.map(addOne))
 
 //asynch functions in js
 

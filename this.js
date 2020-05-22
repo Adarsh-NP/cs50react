@@ -5,7 +5,7 @@
 const video = {
     title: "a",
     play() {
-        console.log(this)
+        console.log(this === video)
     }
 }
 
@@ -13,7 +13,7 @@ const video = {
 
 
 video.stop = function() {
-    console.log(this);
+    console.log(this === video);
 }
 
 video.stop()
@@ -21,7 +21,7 @@ video.stop()
 //stop and play are methods of the video object 
 
 function playVideo(){
-    console.log(this)
+    console.log(this === global)
 }
 
 playVideo()
@@ -31,13 +31,13 @@ playVideo()
 
 const Video =  {
     title: 'a',
-    tags: ['a', 'b', 'c'],
+    tags:  ['a', 'b', 'c'],
     showTags() {
-        this.tags.forEach(element => {
+            this.tags.forEach(element => {
             console.log(this.title,element)
         });
     }
-}
+}  
 
 //const v = new Video('b')
 Video.showTags()
@@ -71,6 +71,8 @@ var myObject = {
         console.log(this === myOtherobject) //true
     }
 }
+
+myObject.myFunction('hello','world')
 
 var myOtherobject ={}
 // myObject.myFunction.call(myOtherobject, 'hello', 'world') //firs tparamater is what this binds to

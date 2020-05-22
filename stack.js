@@ -72,9 +72,10 @@ person.greet.apply({name: 'this is a bound object'})
 
 const newPerson = {
     name: 'NewPerson',
-    greet: () => {console.log(`Hello ${this.name}`)}
+    greet: () => {console.log(`Hello ${this.name}`)},
 }
-newPerson.greet() //why is this undefined here??
+newPerson.greet()
+//why is this undefined here??
 //arrow function will bind this to be whatever this is at the time we declare the function rather than when we invoke the funciton.
 // Unlike regular functions, Arrow functions does not have a 
 //this of their own, only regular functions and global scope 

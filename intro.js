@@ -71,7 +71,7 @@ const o3 = {
         street: 'XYZ',  //address being object within an object, sounds like json this notation doesn't it :P
         number: '123'
     }
-}
+}   //better than the last two in my opinion
 
 object1 = o3
 object1.greet()

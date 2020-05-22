@@ -7,7 +7,7 @@ const myFunction = () => {
 }
 // this is weird as its result is different from that of the same when run in browser or node terminal
 
-myFunction()
+//myFunction()
 
 
 const myObject = {
@@ -32,4 +32,4 @@ const myfunction1 = () => {
 myfunction1()
 myfunction1.call(object1)
 
-//this shit is getting weird, I hope I can survive :P
+// this shit is getting weird, I hope I can survive :P

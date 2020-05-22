@@ -31,4 +31,5 @@ s.add(6)
 s.delete(6)
 console.log(s.size)
 //extends: adding to the base class
-//super: refering to the original class that we are extending
+//super: refering to the original class that we are extending, kinda used to extend to the constructor of the base class similar to how in python we write classname.__init__ to extend 
+
