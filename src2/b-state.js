@@ -9,7 +9,7 @@ const styles = {
 
 class App extends React.Component {
   constructor(props) {
-    super(props)
+    super(props) //allow react.component to do stuff with the props similar to how we invoked the original constructor of parent class in python
     this.state = {
       count: 0,
     }
@@ -35,4 +35,4 @@ class App extends React.Component {
 
 render(<App />, document.getElementById('root'))
 
-//when we extend the react component we do this.props.count in render method, on extended component of react 
+//when we extend the react component we do this.state.count in render method, on extended component of react 
