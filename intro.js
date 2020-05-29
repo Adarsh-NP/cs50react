@@ -164,6 +164,7 @@ variableval = 50
 thisIshoisted() //but const declared function is not hoisted 
 //the following line when uncommented gives error
 //thisIsnotHoisted()
+console.log(THis)
 
 var Thisisavar = 50
 Thisisavar++
